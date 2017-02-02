@@ -1,0 +1,25 @@
+{
+  "name": "my-tour",
+  "version": "0.0.1",
+  "description": "Searching form",
+  "author": "Scevola",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "6.3.6",
+    "browser-sync": "2.13.0",
+    "css-mqpacker": "5.0.1",
+    "gulp": "3.9.1",
+    "gulp-csso": "2.0.0",
+    "gulp-sass": "3.1.0",
+    "gulp-plumber": "1.1.0",
+    "gulp-postcss": "6.1.1",
+    "gulp-rename": "1.2.2",
+    "gulp-concat": "2.6.0",
+    "gulp-uglify": "2.0.0",
+    "run-sequence": "1.2.1"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp default"
+  }
+}

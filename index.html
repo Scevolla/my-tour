@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyTour</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&amp;subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+<header class="page-header">
+  <div class="container clearfix">
+    <a class="logo-link" href="#"><img src="img/logo.png" alt="My tour logo" width="69" height="49"></a>
+    <nav class="main-nav">
+      <ul class="main-nav__list clearfix">
+        <li><a href="#">Моя лента</a></li>
+        <li><a class="active">Интересы</span></a>
+        <li><a href="#">Направления</a></li>
+        <li><a href="#">Подбор тура</a></li>
+        <li><a href="#">Заявка</a></li>
+      </ul>
+    </nav>
+  </div> 
+</header>
+
+<main class="page-main">  
+  <h1 class="page-title">Настройки интересов</h1>
+  
+  <div class="interests">
+    <header class="interests-header">
+      <ul class="interests-header__list">
+        <li><a href="#">Подборка Васи</a></li>
+        <li><a class="active" href="#">Подборка 123</a></li>
+        <li><a href="#">Турция 20.03</a></li>
+        <li><a href="#">Подборка #1</a></li>
+        <li><a class="add-btn" href="#">Добавить подборку</a></li>
+      </ul>
+    </header>
+
+    <form class="form" action="#">
+      <div class="form__block form__block--1 clearfix">
+        <div class="form__field-wrapper">
+          <label class="form__label">Название подборки</label>
+          <input type="text" name="name" class="form__field form__field--input form__field--name" value="Подборка 123">
+        </div>
+        <div class="form__field-wrapper">
+          <label class="form__label">Ваш город</label>
+          <input type="text" name="city" class="form__field form__field--input form__field--city" value="Санкт-Петербург">
+        </div>
+        <a class="form__result-btn" href="#">Смотреть результаты</a>
+      </div>
+
+      <div class="form__block form__block--2">
+        <label class="form__label">Вы можете задать несколько стран или регионов для одной подборки</label>
+        <div class="form__field region-block">
+          <div class="region-block__title">Юго-Восточная Азия</div>
+          <ul class="region-block__country-list clearfix">
+            <li class="region-block__country region-block__country--thailand">Таиланд<i class="icon-close-btn"></i></li>
+            <li class="region-block__country region-block__country--vietnam">Вьетнам<i class="icon-close-btn"></i></li>
+            <li class="region-block__country region-block__country--indonesia">Индонезия<i class="icon-close-btn"></i></li>
+          </ul>
+        </div>
+        <a class="form__region-btn form__region-btn--region" href="#">Добавить регион</a>
+        <a class="form__region-btn form__region-btn--country" href="#">Добавить страны</a>
+      </div>
+
+      <div class="form__block form__block--3 clearfix">
+        <div class="form__field-wrapper">
+          <label class="form__label">Дата вылета</label>
+          <span class="form__field form__field--info form__field--date">13 января, ПН - 19 января, СБ</span>
+        </div>
+        <div class="form__field-wrapper">
+          <label class="form__label">На сколько</label>
+          <span class="form__field form__field--info form__field--nights">7 —14 ночей</span>
+        </div>
+        <div class="form__field-wrapper">
+          <label class="form__label">Количество гостей</label>
+          <span class="form__field form__field--info form__field--people">2 взрослых, 2 детей</span>
+        </div>
+        <div class="form__field-wrapper">
+          <label class="form__label">Стоимость тура</label>
+          <span class="form__field form__field--info form__field--price">50 000 Р — 150 000 Р</span>
+        </div>       
+      </div>
+
+      <div class="form__block form__block--4 clearfix">
+        <div class="form__field-wrapper">
+          <label class="form__label">Категория отелей от</label>
+          <span class="form__field form__field--info form__field--category"><span class="star-4"><i></i><i></i><i></i><i></i><i></i></span></span>
+        </div>
+        <div class="form__field-wrapper">
+          <label class="form__label">Рейтинг TopHotels</label>
+          <span class="form__field form__field--info form__field--rating">Не ниже<span>4.0</span></span>
+        </div>
+        <div class="form__field-wrapper">
+          <label class="form__label">Тип питания</label>
+          <span class="form__field form__field--info form__field--food">Любой</span>
+        </div>
+        <div class="form__field-wrapper">
+          <label class="form__label">Расположение</label>
+          <span class="form__field form__field--info form__field--place">Пляжные, 1-я линия</span>
+        </div>
+        <a href="#" class="form__remove-btn">Удалить подборку</a>       
+      </div>
+    </form>
+  </div>
+</main>
+
+<footer class="page-footer">
+  <div class="container page-footer-container">
+    <div class="footer__block footer__block--1">
+      <span>Туристический проект</span><br>
+      Москва, 1-й Щипковский переулок, д.1<br>
+      <a class="dotted-link" href="#">Показать на карте</a>
+    </div>
+    <div class="footer__block footer__block--2">
+      Время работы офиса:<br>
+      Будни 10:00 - 21:00<br>
+      Выходные и праздники 11:00 - 17:00
+    </div>
+    <div class="footer__block footer__block--3">
+      +7 495 585 55 55<br>
+      <a class="dotted-link" href="#">Обратная связь</a>
+    </div>
+    <div class="footer__block footer__block--4">
+      <a class="vk-link" href="#"><i class="icon icon-vk"></i>ВКонтакте</a><br>
+      <a class="fb-link" href="#"><i class="icon icon-facebook"></i>Facebook</a><br>
+      <a class="in-link" href="#"><i class="icon icon-instagram"></i>Instagram</a><br>
+      <a class="ok-link" href="#"><i class="icon icon-odnoklassniki"></i>Одноклассники</a>
+    </div>
+  </div>
+</footer>
+
+<div class="copyright">
+  <div class="container">
+    Разработано командой TourAdmin &copy; 2017
+  </div>
+</div>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
